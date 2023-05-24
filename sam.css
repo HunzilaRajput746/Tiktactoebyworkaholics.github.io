@@ -1,0 +1,107 @@
+.bio-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .bio-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    width: calc(50% - 15px);
+    max-width: 400px;
+  }
+  
+  .bio-container:nth-child(odd) {
+    margin-right: 30px;
+  }
+  
+  .bio-circle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-color: #fff;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: all 0.3s ease;
+  }
+  
+  .bio-circle:hover {
+    width: 300px;
+    height: 400px;
+    border-radius: 5px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .bio-circle img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 15px;
+  }
+  
+  .bio-rectangle {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 90%;
+    max-width: 400px;
+    padding: 30px;
+    background-color: #fff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    z-index: 1;
+  }
+  
+  .bio-container :hover .bio-rectangle {
+    display: block;
+  }
+  
+  .bio-rectangle h3 {
+    margin-top: 0;
+  }
+  
+  .bio-rectangle p {
+    margin-right: 0;
+  }
+#a1.bio-circle{
+  background-color: #f7934100;
+}
+#a1.bio-rectangle{
+  background-color: #ff4800;
+}
+#a2.bio-circle{
+  background-color: #51e25d00;
+}
+#a2.bio-rectangle{
+  background-color: #18cc00;
+}
+#a3.bio-circle{
+  background-color: #e761b400;
+}
+#a3.bio-rectangle{
+  background-color: #ff08de;
+}
+#a4.bio-circle{
+  background-color: #55c1eb00;
+}
+#a4.bio-rectangle{
+  background-color: #008cff;
+}
+#a5.bio-circle{
+  background-color: #5855f300;
+}
+#a5.bio-rectangle{
+  background-color: #1306cf;
+}
+p{
+  color: #fff;
+}

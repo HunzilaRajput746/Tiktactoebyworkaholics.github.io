@@ -1,0 +1,260 @@
+@font-face {
+    font-family: champ;
+    src: url(images/style/font-champ-bold.ttf) format('truetype');
+    font-display: swap
+}
+
+:root {
+    --txtClr: #000000;
+    --bgClr: hsl(0, 0%, 100%);
+    --bg: linear-gradient(to right, hsla(214, 100%, 90%, 100%) 0%, hsla(214, 100%, 90%, 0%) 20%, hsla(214, 100%, 90%, 0%) 50%, hsla(214, 100%, 90%, 0%) 80%, hsla(214, 100%, 90%, 100%) 100%);
+    --a0Clr: hsl(60, 100%, 97%);
+    --a1Clr: hsl(50, 100%, 95%);
+    --a2Clr: hsl(50, 100%, 85%);
+    --a3Clr: hsl(45, 100%, 77%);
+    --a4Clr: hsl(50, 100%, 28%);
+    --b0Clr: hsl(213, 100%, 96%);
+    --b1Clr: hsl(0, 0%, 57%);
+    --b2Clr: hsl(80, 9%, 94%);
+    --b3Clr: hsl(0, 0%, 9%);
+    --b4Clr: hsl(214, 100%, 25%);
+    --o1Clr: hsl(100, 100%, 30%);
+    --r1Clr: hsl(0, 100%, 60%);
+    --h1Shadow2: 2px 2px 2px hsl(0, 0%, 100%), inset 1px 1px 1px hsl(24, 100%, 100%);
+    --h1Shadow: 1px 1px 1px hsl(0, 0%, 0%), -1px -1px 1px hsl(0, 0%, 100%);
+    --trans: all linear 0.5s
+}
+
+
+    h1 {
+        mix-blend-mode: luminosity;
+        color: var(--b3Clr);
+        text-shadow: var(--h1Shadow);
+        margin: 0 0 1.3rem;
+        font: normal 2.6rem/3rem champ, Verdana, Arial;
+        text-align: center
+    }
+    h2 {
+        margin: 3.7rem 0 .8rem;
+        font: 2rem champ, Verdana;
+        color: var(--r1Clr)
+    }
+    h3 {
+        margin: 2.1rem 0 .6rem;
+        font-weight: 400;
+        font-size: 1.3rem;
+        color: var(--b3Clr)
+    }
+    h4 {
+        margin: 1.4rem 0 .6rem;
+        font-weight: 400;
+        font-size: 1.2rem;
+        font-variant: small-caps;
+        color: var(--o1Clr)
+    }
+    h1+h2 {
+        margin-top: 2rem
+    }
+    h1+h3 {
+        margin-top: 1rem
+    }
+    h2+h3 {
+        margin-top: 1rem
+    }
+    textarea {
+        color: var(--b3Clr);
+        background-color: var(--b1Clr);
+        padding: 5px;
+        border-radius: 10px;
+        font-size: 1.1rem;
+        font-family: Verdana, Arial, Tahoma, sans-serif
+    }
+    .large {
+        font-size: 1.1rem;
+        color: var(--b3Clr)
+    }
+    .larger {
+        font-size: 1.2rem;
+        color: var(--o1Clr);
+        transition: var(--trans)
+    }
+    .largest {
+        font-size: 1.6rem;
+        color: var(--a4Clr)
+    }
+    .huge {
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: var(--b3Clr)
+    }
+    p {
+        min-width: 10ch;
+        max-width: 68ch;
+        padding: .25rem 0;
+        overflow: auto
+    }
+    p a {
+        display: inline-block;
+        padding: .1rem .3rem;
+        border: solid 1px var(--b2Clr);
+        border-radius: .6rem;
+        background-color: var(--a0Clr)
+    }
+    p a:hover {
+        border: solid 1px var(--a3Clr);
+        background-color: var(--a2Clr);
+        cursor: pointer
+    }
+    a:link {
+        color: var(--b4Clr)
+    }
+    a:visited {
+        color: var(--b3Clr)
+    }
+    .nobr {
+        white-space: nowrap
+    }
+    .center,
+    .centerfull {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        color: antiquewhite;
+    }
+    .full {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        width: 96vw;
+        margin-left: -48vw;
+        margin-right: -48vw;
+        position: relative;
+        left: 50%;
+        right: 50%;
+        box-shadow: 0 0 3px 2px var(--b2Clr)
+    }
+ 
+    .times {
+        font: 700 130% times new roman, serif
+    }
+    .head {
+        margin: .2rem 0 .6rem;
+        padding: .5rem;
+        color: var(--fgClr);
+        text-align: center;
+        background: var(--a1Clr) 0%;
+        border: 2px solid var(--a2Clr);
+        border-radius: 25px;
+        font: 700 1.1rem Verdana
+    }
+    .example {
+        margin: 1.3rem .6rem 1.9rem 3rem;
+        background-color: var(--b1Clr);
+        padding: .3rem .6rem .6rem;
+        border-radius: .6rem;
+        box-shadow: .2rem .2rem .3rem #002c66;
+        overflow: hidden;
+        border: 2px solid var(--bgClr)
+    }
+    .example h3 {
+        font-size: 1.1rem;
+        margin: .1rem -.1rem;
+        padding: .1rem .3rem;
+        background: var(--a1Clr);
+        border-radius: .5rem;
+        color: var(--b4Clr)
+    }
+    p+ul {
+        margin-top: -1.1rem
+    }
+    li {
+        color: var(--b4Clr);
+        list-style-type: disc;
+        padding-top: .5rem
+    }
+    li:hover {
+        color: var(--b3Clr)
+    }
+    p.so {
+        margin: 3px
+    }
+    li .so {
+        padding: 0 0 .6rem 6.6rem;
+        margin-top: 4px
+    }
+    .so ul {
+        margin-top: .4rem
+    }
+    .simple {
+        overflow: auto
+    }
+    .simple table {
+        border-collapse: collapse;
+        background: var(--b1Clr)
+    }
+    .simple .tbl {
+        background: var(--b0Clr);
+        padding-left: .4rem;
+        padding-right: .4rem;
+        border-radius: .3rem
+    }
+    .simple th,
+    .simple td {
+        border: solid .1rem var(--bgClr);
+        padding: .3rem
+    }
+    .simple th {
+        background: var(--b2Clr)
+    }
+    .beach {
+        overflow: auto
+    }
+    .beach table {
+        border-collapse: collapse;
+        background: var(--b0Clr)
+    }
+  
+
+    .pop {
+        padding: .4rem;
+        border-radius: .5rem;
+        font: .9rem Arial;
+        background-color: var(--b2Clr);
+        box-shadow: .4rem .4rem .3rem 0 rgba(121, 120, 120, 0.75);
+        transition: all linear .5s;
+        opacity: 0;
+        text-align: center
+    }
+
+    .sect {
+        background-color: var(--b1Clr);
+        border-radius: .3rem;
+        padding: .1rem
+    }
+    .label {
+        color: var(--txtClr);
+        padding: .1rem;
+        outline-style: none
+    }
+
+    .input:hover {
+        box-shadow: inset 2px 2px 2px var(--b2Clr), inset -2px -2px 2px var(--b2Clr)
+    }
+ 
+    .select {
+        font: 1.1rem Arial;
+        color: var(--txtClr);
+        background: var(--b0Clr);
+        padding: 1px;
+        line-height: 1.9rem;
+        text-align: center;
+        cursor: pointer
+    }
+   
+
+    #copyrt {
+        margin: .6rem auto .3rem;
+        text-align: center;
+        font: .9rem Arial;
+        color: var(--o1Clr)
+    }
+   

@@ -1,0 +1,511 @@
+.container{
+    margin-top: 0px;
+    margin-left: 600px;
+}
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Bona+Nova; */
+}
+body{
+    display:list-item;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.Card1{
+    top: 103%;
+
+    position: absolute;
+    width: 700px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.Card1 .Circle1{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.Card1 .Circle1::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #d83133;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+.Card1:hover .Circle1:before{
+    background: #c300b0;
+    clip-path: circle(400px at center)
+ } 
+.card1 img{
+    position: absolute;
+    left: 45%;
+    transform: (-50%, -50%);
+    height: 100px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.card1:hover img{
+    left: 50%;
+    height: 400px;
+}
+.card1 .content1{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.card1:hover .content1{
+    left: 0;
+    opacity: 1;
+    visibility: visible ;
+}
+.card1 .content1 h2{
+    color: rgb(0, 0, 0);
+    /* text-transform: uppercase; */
+    font-size: 40px;
+    font-family: fasthand;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
+.card1 .content1 p{
+    color: rgb(0, 0, 0);
+}
+.card1 .content1 a{
+    position: relative;
+    color: #fff;
+    padding: 10px 20px ;
+    border-radius: 10px;
+    background: #fff;
+    color: rgb(17, 17, 17);
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration:none;
+    font-weight: 700;
+}
+@media(max-width: 990px){
+    .card1{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start; 
+        margin: 10px;
+    }
+    .card1:hover{
+        height: 600px;
+    }
+    .card1 .content1{
+        width: 100%;
+        left: 0;
+        padding: 40px
+    }
+    .card1:hover img{
+        top: 40%;
+        left: 30%;
+        height: 300px  ;
+    }
+}
+@media(max-width: 420px){
+    .card1 .content1{
+        padding: 20px
+    }
+}
+
+/* Ali Ajmal CSS */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Bona+Nova; */
+}
+body{
+    display:list-item;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.Card2{
+    top: 156%;
+    position: absolute;
+    width: 700px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.Card2 .Circle2{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.Card2 .Circle2::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #d83133;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+.Card2:hover .Circle2:before{
+    background: #0065c3;
+    clip-path: circle(400px at center)
+ } 
+.card2 img{
+    position: absolute;
+    left: 45%;
+    transform: (-50%, -50%);
+    height: 100px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.card2:hover img{
+    left: 50%;
+    height: 400px;
+}
+.card2 .content2{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.card2:hover .content2{
+    left: 0;
+    opacity: 1;
+    visibility: visible ;
+}
+.card2 .content2 h2{
+    color: rgb(0, 0, 0);
+    /* text-transform: uppercase; */
+    font-size: 40px;
+    font-family: fasthand;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
+.card2 .content2 p{
+    color: rgb(0, 0, 0);
+}
+.card2 .content2 a{
+    position: relative;
+    color: #fff;
+    padding: 10px 20px ;
+    border-radius: 10px;
+    background: #fff;
+    color: rgb(17, 17, 17);
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration:none;
+    font-weight: 700;
+}
+@media(max-width: 990px){
+    .card2{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start; 
+        margin: 10px;
+    }
+    .card2:hover{
+        height: 600px;
+    }
+    .card2 .content2{
+        width: 100%;
+        left: 0;
+        padding: 40px
+    }
+    .card2:hover img{
+        top: 40%;
+        left: 30%;
+        height: 300px  ;
+    }
+}
+@media(max-width: 420px){
+    .card2 .content2{
+        padding: 20px
+    }
+}
+
+/* Abdul Haseeb*/
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Bona+Nova; */
+}
+body{
+    display:list-item;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.Card3{
+    top: 157%;
+    margin-left: 600px;
+    position: absolute;
+    width: 700px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.Card3 .Circle3{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.Card3 .Circle3::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #d83133;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+.Card3:hover .Circle3:before{
+    background: #00741b;
+    clip-path: circle(400px at center)
+ } 
+.card3 img{
+    position: absolute;
+    left: 47%;
+    transform: (-50%, -50%);
+    height: 100px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.card3:hover img{
+    left: 60%;
+    height: 400px;
+}
+.card3 .content3{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.card3:hover .content3{
+    left: 0;
+    opacity: 1;
+    visibility: visible ;
+}
+.card3 .content3 h2{
+    color: rgb(0, 0, 0);
+    /* text-transform: uppercase; */
+    font-size: 40px;
+    font-family: fasthand;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
+.card3 .content3 p{
+    color: rgb(0, 0, 0);
+}
+.card3 .content3 a{
+    position: relative;
+    color: #fff;
+    padding: 10px 20px ;
+    border-radius: 10px;
+    background: #fff;
+    color: rgb(17, 17, 17);
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration:none;
+    font-weight: 700;
+}
+@media(max-width: 990px){
+    .card3{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start; 
+        margin: 10px;
+    }
+    .card3:hover{
+        height: 600px;
+    }
+    .card3 .content3{
+        width: 100%;
+        left: 0;
+        padding: 40px
+    }
+    .card3:hover img{
+        top: 40%;
+        left: 30%;
+        height: 300px  ;
+    }
+}
+@media(max-width: 420px){
+    .card3 .content3{
+        padding: 20px
+    }
+}
+
+/* Usama Abbas CSS */
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* font-family: Bona+Nova; */
+}
+body{
+    display:list-item;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.card4{
+    top: 210%;
+    position: absolute;
+    margin-left: 22%;
+    width: 700px;
+    height: 350px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    transition: 0.5s;
+}
+.Card4 .Circle4{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.Card4 .Circle4::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #d83133;
+    clip-path: circle(120px at center);
+    transition: 0.5s;
+}
+.Card4:hover .Circle4:before{
+    background: crimson;
+    clip-path: circle(400px at center)
+ } 
+.card4 img{
+    position: absolute;
+    left: 45%;
+    transform: (-50%, -50%);
+    height: 100px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+.card4:hover img{
+    left: 50%;
+    height: 400px;
+}
+.card4 .content4{
+    position: relative;
+    width: 50%;
+    left: 20%;
+    padding: 20px 20px 20px 40px;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.card4:hover .content4{
+    left: 0;
+    opacity: 1;
+    visibility: visible ;
+}
+.card4 .content4 h2{
+    color: rgb(0, 0, 0);
+    /* text-transform: uppercase; */
+    font-size: 40px;
+    font-family: fasthand;
+    line-height: 1em;
+    margin-bottom: 5px;
+}
+.card4 .content4 p{
+    color: rgb(0, 0, 0);
+}
+.card4 .content4 a{
+    position: relative;
+    color: #fff;
+    padding: 10px 20px ;
+    border-radius: 10px;
+    background: #fff;
+    color: rgb(17, 17, 17);
+    margin-top: 10px;
+    display: inline-block;
+    text-decoration:none;
+    font-weight: 700;
+}
+@media(max-width: 990px){
+    .card4{
+        width: auto;
+        max-width: 350px;
+        align-items: flex-start; 
+        margin: 10px;
+    }
+    .card4:hover{
+        height: 600px;
+    }
+    .card4 .content4{
+        width: 100%;
+        left: 0;
+        padding: 40px
+    }
+    .card4:hover img{
+        top: 40%;
+        left: 30%;
+        height: 300px  ;
+    }
+}
+@media(max-width: 420px){
+    .Card4 .content4{
+        padding: 20px
+    }
+}
+
+
+
+
+
+

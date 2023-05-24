@@ -1,0 +1,39 @@
+<html>
+<head>
+    <title>Workaholics</title>
+    <style>
+        .bg-video {
+            background-color: black;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .bg-video video{
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-video">
+        <video id="bg-video" src="page.mp4" autoplay onended="redirectToSecondPage()"></video>
+    </div>
+    <script>
+        function redirectToSecondPage() {
+            window.location.href="Tik tak toe.html";
+        }
+        window.onload = function() {
+            var bgVideo = document.getElementById("bg-video");
+            if (performance.navigation.type == 1) {
+                bgVideo.autoplay = false;
+            }
+             else {
+                bgVideo.autoplay = true;
+                bgVideo.loop = true;
+            }
+        }
+    </script>
+</body>
+</html>
